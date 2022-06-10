@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="16.699">
+    <testcase classname="Search functionality" name="Search the product" time="16.42">
+        <failure message="Unable to find element with locator By.xpath: //*[@id=&quot;huc-view-your-list-button&quot;]/span&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'DESKTOP-BDFFGT7', ip: '192.168.29.74', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given browser opened and url is navigated...................................passed
+When I search for product as "<Product>"....................................passed
+And user should click on the product........................................passed
+When user should click on wishlist..........................................passed
+Then user should click on view your list....................................failed
+And user should click on add to cart........................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //*[@id="huc-view-your-list-button"]/span
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-BDFFGT7', ip: '192.168.29.74', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at Search.SearchStepDef.user_should_click_on_view_your_list(SearchStepDef.java:64)
+	at ✽.user should click on view your list(file:///C:/Users/ASUS/Desktop/Selenium/API/RestAssured/Amazon1/src/test/resources/Search.feature:8)
+]]></failure>
+    </testcase>
+</testsuite>
